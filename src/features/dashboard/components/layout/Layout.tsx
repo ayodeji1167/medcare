@@ -17,12 +17,12 @@ export default function Layout({ children }: { children: ReactNode }) {
         pt={'5rem'}
       >
         <GridItem>
-          <Box pl={'.5rem'} width={sidebarWidth} position={'fixed'} zIndex={2}>
+          <Box width={sidebarWidth} position={'fixed'} zIndex={2}>
             <SideBar />
           </Box>
         </GridItem>
         <GridItem>
-          <Box pr={'2.5rem'} minH={'100vh'} w={'100%'}>
+          <Box pr={'1.5rem'} minH={'100vh'} w={'100%'}>
             {children}
           </Box>
         </GridItem>
