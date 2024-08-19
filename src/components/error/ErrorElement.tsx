@@ -1,8 +1,21 @@
 import { Box, Button, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import { useEffect } from 'react';
 import { Link, useRouteError } from 'react-router-dom';
 
 export const RouteError = () => {
   const error: any = useRouteError();
+
+  useEffect(() => {
+    if (error) {
+      const errorMessage =
+        error.statusText?.toLowerCase() || error.message?.toLowerCase();
+      const reloadMessage = 'failed to fetch dynamically imported module';
+
+      if (errorMessage?.includes(reloadMessage)) {
+        window.location.reload();
+      }
+    }
+  }, [error]); // Depend on `error` instead of its properties
 
   return (
     <Box h="100vh" w="full" overflow="hidden" position="relative">
