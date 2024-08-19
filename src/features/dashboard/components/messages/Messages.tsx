@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Messages() {
+export function Messages() {
   return <div>Messages</div>;
 }
