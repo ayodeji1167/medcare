@@ -36,7 +36,7 @@ export const stats = [
 export const lineChartData = [
   {
     name: 'Mobile apps',
-    data: [1500, 800, 1600, 220, 1750, 900, 2000, 1000, 2500],
+    data: [1500, 800, 1600, 220, 1750, 900, 2000, 1000, 2400],
   },
 ];
 

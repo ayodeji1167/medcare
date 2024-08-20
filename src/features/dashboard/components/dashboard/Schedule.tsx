@@ -10,19 +10,13 @@ export default function Schedule() {
       p={'1.5rem'}
       rounded={'.5rem'}
     >
-      <Text
-        color={'#2F2F2F'}
-        mb={'.2rem'}
-        fontSize={'.875rem'}
-        fontWeight={500}
-      >
+      <Text variant={'componentHeading'} mb={'.2rem'}>
         Schedule an appointment
       </Text>
       <Text color={'#9F9F9F'} fontSize={'.75rem'}>
         Scheduling a patient visit
       </Text>
       <Stack
-        color={'white'}
         bg={'primary.500'}
         alignItems={'center'}
         justifyContent={'center'}
@@ -35,7 +29,7 @@ export default function Schedule() {
         <Box>
           <Icon as={CalendarIcon} />
         </Box>
-        <Text fontWeight={500} fontSize={'.75rem'}>
+        <Text color={'white'} fontWeight={500}>
           Schedule an appointment
         </Text>
       </Stack>
