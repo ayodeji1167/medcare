@@ -91,6 +91,7 @@ export const lineChartOptions = {
         colors: 'black',
         fontSize: '8px',
       },
+      offsetX: -10, // Adjust this value to move the labels closer to the left
     },
     tickAmount: 6, // To ensure the y-axis increments by 400 (0, 400, 800, ... 2400)
     min: 0,

@@ -57,6 +57,7 @@ function StatItem({ description, value, percentage, icon, increased }) {
 export default function Chart() {
   const [chartData, setChartData] = useState<any>([]);
   const [chartOptions, setChartOptions] = useState<any>({});
+  const [duration, setDuration] = useState('monthly');
 
   useEffect(() => {
     setChartData(lineChartData);
@@ -93,6 +94,29 @@ export default function Chart() {
           height="100%"
         />
       </Box>
+
+      <Flex px={'1.5rem'} mt={'2rem'} alignItems={'center'} gap={'1.6rem'}>
+        {['today', 'weekly', 'monthly', 'yearly'].map((item) => {
+          const isActive = item == duration;
+          return (
+            <Center
+              rounded={'.5rem'}
+              flex={1}
+              bg={isActive ? 'primary.500' : 'transparent'}
+              key={item}
+              textTransform={'capitalize'}
+              color={isActive ? 'white' : '#2F2F2F'}
+              fontSize={'.75rem'}
+              h={'2.5rem'}
+              onClick={() => setDuration(item)}
+              cursor={'pointer'}
+              fontWeight={isActive ? 600 : 400}
+            >
+              {item?.toLowerCase()}
+            </Center>
+          );
+        })}
+      </Flex>
     </Box>
   );
 }
