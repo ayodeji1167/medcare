@@ -6,7 +6,7 @@ import TopNav from './TopNav';
 export default function Layout({ children }: { children: ReactNode }) {
   const sidebarWidth = '16rem';
   return (
-    <Box bg={'#F5F5F5'} overflowX={'hidden'}>
+    <Box bg={'white'} overflowX={'hidden'}>
       <Box zIndex={3} position={'fixed'} w={'100%'} top={0} left={0}>
         <TopNav />
       </Box>

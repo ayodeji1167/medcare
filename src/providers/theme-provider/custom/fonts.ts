@@ -1,6 +1,7 @@
 const fonts = {
-  heading: `'BR Firma',sans-serif`,
-  body: `'DM Sans',sans-serif`,
+  // heading: `'Roboto',sans-serif`,
+  body: `'Roboto',sans-serif`,
+  // body: `'Roboto',sans-serif`,
 };
 
 const fontSizes = {

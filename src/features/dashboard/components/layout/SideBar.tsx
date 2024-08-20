@@ -23,7 +23,12 @@ function NavItem({ name, slug, icon, path }) {
         alignItems={'center'}
       >
         <Icon color={isActivePath ? 'white' : '#9F9F9F'} as={icon} />
-        <Text color={isActivePath ? 'white' : '#9F9F9F'}>{name}</Text>
+        <Text
+          fontWeight={isActivePath ? '600' : '400'}
+          color={isActivePath ? 'white' : '#9F9F9F'}
+        >
+          {name}
+        </Text>
       </Flex>
     </Link>
   );
