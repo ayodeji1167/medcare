@@ -1,8 +1,9 @@
-import { stats } from '@/data/dashboard';
+import { lineChartData, lineChartOptions, stats } from '@/data/dashboard';
 import { Box, Center, Flex, Icon, Text } from '@chakra-ui/react';
 import { ReactComponent as IncreaseIcon } from '@/assets/icons/dashboard/increase.svg';
 import { ReactComponent as DecreaseIcon } from '@/assets/icons/dashboard/decrease.svg';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import ReactApexChart from 'react-apexcharts';
 
 function StatItem({ description, value, percentage, icon, increased }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -54,6 +55,14 @@ function StatItem({ description, value, percentage, icon, increased }) {
   );
 }
 export default function Chart() {
+  const [chartData, setChartData] = useState<any>([]);
+  const [chartOptions, setChartOptions] = useState<any>({});
+
+  useEffect(() => {
+    setChartData(lineChartData);
+    setChartOptions(lineChartOptions);
+  }, []); // Empty dependency array ensures this runs once after the initial render
+
   return (
     <Box
       p={'1.5rem'}
@@ -75,6 +84,15 @@ export default function Chart() {
           <StatItem {...item} key={item.description + '' + item.value} />
         ))}
       </Flex>
+      <Box height={'17rem'} mt={'1.5rem'}>
+        <ReactApexChart
+          options={chartOptions}
+          series={chartData}
+          type="area"
+          width="100%"
+          height="100%"
+        />
+      </Box>
     </Box>
   );
 }
