@@ -17,7 +17,7 @@ export function Dashboard() {
           Dr Ayobami Israel
         </Text>
       </Box>
-      <Grid templateColumns={'3fr 1fr'} gap="1.5rem">
+      <Grid templateColumns={'3fr 1.2fr'} gap="1.5rem">
         <Stack spacing={'1.5rem'}>
           <Chart />
           <TodaySchedule />

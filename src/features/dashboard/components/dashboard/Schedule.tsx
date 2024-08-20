@@ -1,10 +1,44 @@
-import { Box } from '@chakra-ui/react';
-import React from 'react';
+import { Box, Icon, Stack, Text } from '@chakra-ui/react';
+import { ReactComponent as CalendarIcon } from '@/assets/icons/dashboard/calendar.svg';
 
 export default function Schedule() {
   return (
-    <Box bg={'yellow'} h={'11rem'}>
-      Schedule
+    <Box
+      bg={'white'}
+      h={'11rem'}
+      boxShadow="0px 4px 50px 0px #E9F1FEB2"
+      p={'1.5rem'}
+      rounded={'.5rem'}
+    >
+      <Text
+        color={'#2F2F2F'}
+        mb={'.2rem'}
+        fontSize={'.875rem'}
+        fontWeight={500}
+      >
+        Schedule an appointment
+      </Text>
+      <Text color={'#9F9F9F'} fontSize={'.75rem'}>
+        Scheduling a patient visit
+      </Text>
+      <Stack
+        color={'white'}
+        bg={'primary.500'}
+        alignItems={'center'}
+        justifyContent={'center'}
+        rounded={'.5rem'}
+        h={'5rem'}
+        spacing={'0rem'}
+        mt={'1rem'}
+        cursor={'pointer'}
+      >
+        <Box>
+          <Icon as={CalendarIcon} />
+        </Box>
+        <Text fontWeight={500} fontSize={'.75rem'}>
+          Schedule an appointment
+        </Text>
+      </Stack>
     </Box>
   );
 }
