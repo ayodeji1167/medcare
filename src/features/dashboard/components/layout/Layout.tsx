@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <TopNav />
       </Box>
       <SimpleGrid
-        columnGap={'1rem'}
+        columnGap={'1.5rem'}
         templateColumns={`${sidebarWidth} auto`}
         columns={2}
         pt={'5rem'}

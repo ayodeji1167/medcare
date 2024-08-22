@@ -26,6 +26,10 @@ const { Admin } = lazyImport(
   () => import('../components/admin/Admin'),
   'Admin'
 );
+const { PatientDetails } = lazyImport(
+  () => import('../components/patients/patient-details/PatientDetails'),
+  'PatientDetails'
+);
 
 export const DashboardRouteList: RouteObject[] = [
   {
@@ -35,6 +39,10 @@ export const DashboardRouteList: RouteObject[] = [
   {
     path: '/patients',
     element: <Patients />,
+  },
+  {
+    path: '/patients/:id',
+    element: <PatientDetails />,
   },
   {
     path: '/messages',
