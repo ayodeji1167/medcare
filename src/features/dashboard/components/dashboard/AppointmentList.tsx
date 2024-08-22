@@ -3,6 +3,8 @@ import avatar1 from '@/assets/images/appointment-avatar.png';
 import avatar2 from '@/assets/images/avatar2.png';
 import avatar3 from '@/assets/images/avatar3.png';
 import avatar4 from '@/assets/images/avatar4.png';
+import avatar5 from '@/assets/images/avatar/avatar6.png';
+import avatar7 from '@/assets/images/avatar/avatar8.png';
 function ListItem({ name, image, dr, status }) {
   const isOnline = status?.toLowerCase() === 'online';
   return (
@@ -42,7 +44,6 @@ export default function AppointmentList() {
       boxShadow="0px 4px 50px 0px #E9F1FEB2"
       p={'1.5rem'}
       rounded={'.5rem'}
-      h={'14rem'}
       bg={'white'}
     >
       <Text mb={'1rem'} variant={'componentHeading'}>
@@ -88,10 +89,16 @@ export default function AppointmentList() {
           image={avatar1}
         />
         <ListItem
-          name={'Angel Jones'}
+          name={'Sophia Brown'}
+          status={'Physical'}
+          dr={'Dr. George Smith'}
+          image={avatar5}
+        />
+        <ListItem
+          name={'Emily Stones'}
           status={'Online'}
-          dr={'Dr. Abel Damina'}
-          image={avatar4}
+          dr={'Dr. Amanda Ray'}
+          image={avatar7}
         />
       </Stack>
     </Box>

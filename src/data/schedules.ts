@@ -1,0 +1,73 @@
+import img1 from '@/assets/images/avatar/avatar7.png';
+import img2 from '@/assets/images/avatar/avatar6.png';
+import img3 from '@/assets/images/avatar/avatar3.png';
+import img4 from '@/assets/images/avatar/avatar9.png';
+import img5 from '@/assets/images/avatar/avatar5.png';
+
+export const schedules = [
+  {
+    firstName: 'Josh',
+    lastName: 'Kelvin',
+    gender: 'male',
+    age: 53,
+    id: '#001892',
+    drInCharge: 'Dr. Charlse Carl',
+    department: 'Cardiology department',
+    time: '12:00pm',
+    status: 'pending',
+    type: 'checkup',
+    image: img1,
+  },
+  {
+    firstName: 'Emily',
+    lastName: 'Stone',
+    gender: 'female',
+    age: 42,
+    id: '#002345',
+    drInCharge: 'Dr. Amanda Ray',
+    department: 'Neurology department',
+    time: '9:30am',
+    status: 'completed',
+    type: 'consultation',
+    image: img2,
+  },
+  {
+    firstName: 'Michael',
+    lastName: 'Johnson',
+    gender: 'male',
+    age: 36,
+    id: '#003678',
+    drInCharge: 'Dr. George Smith',
+    department: 'Orthopedics department',
+    time: '11:00am',
+    status: 'cancelled',
+    type: 'surgery',
+    image: img3,
+  },
+  {
+    firstName: 'Sophia',
+    lastName: 'Brown',
+    gender: 'female',
+    age: 29,
+    id: '#004789',
+    drInCharge: 'Dr. Linda Green',
+    department: 'Pediatrics department',
+    time: '2:00pm',
+    status: 'pending',
+    type: 'vaccination',
+    image: img4,
+  },
+  {
+    firstName: 'David',
+    lastName: 'Lee',
+    gender: 'male',
+    age: 47,
+    id: '#005912',
+    drInCharge: 'Dr. Eric Wright',
+    department: 'Dermatology department',
+    time: '4:15pm',
+    status: 'completed',
+    type: 'checkup',
+    image: img5,
+  },
+];
