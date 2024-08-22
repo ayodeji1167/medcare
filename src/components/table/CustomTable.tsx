@@ -8,6 +8,7 @@ import {
   Thead,
   Tr,
   chakra,
+  HTMLChakraProps,
 } from '@chakra-ui/react';
 import {
   TableOptions,
@@ -20,6 +21,10 @@ import {
 } from '@tanstack/react-table';
 import React, { ReactNode } from 'react';
 import { FaSortDown, FaSortUp } from 'react-icons/fa';
+
+// Define ThProps and TdProps
+type ThProps = HTMLChakraProps<'th'>;
+type TdProps = HTMLChakraProps<'td'>;
 
 // Define types for optional sorting, pagination, and meta
 interface CustomTableProps<TData extends object> {
@@ -41,6 +46,8 @@ interface CustomTableProps<TData extends object> {
   tableOptions?: Partial<TableOptions<TData>>;
   tableHeader?: ReactNode;
   tableFooter?: ReactNode;
+  thProps?: ThProps;
+  tdProps?: TdProps;
 }
 
 export default function CustomTable<TData extends object>({
@@ -53,6 +60,8 @@ export default function CustomTable<TData extends object>({
   tableOptions,
   tableHeader,
   tableFooter,
+  thProps,
+  tdProps,
 }: CustomTableProps<TData>) {
   const table = useReactTable({
     columns: columnDef,
@@ -85,6 +94,7 @@ export default function CustomTable<TData extends object>({
                     pb="1rem"
                     letterSpacing={'0'}
                     pl={index === 0 ? '3.2rem' : ''}
+                    {...thProps}
                   >
                     {flexRender(
                       header.column.columnDef.header,
@@ -123,6 +133,7 @@ export default function CustomTable<TData extends object>({
                       isNumeric={meta?.isNumeric}
                       py={'0rem'}
                       pt={index === 0 ? '1rem' : '0'}
+                      {...tdProps}
                     >
                       {flexRender(
                         cell.column.columnDef.cell,
