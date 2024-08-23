@@ -19,11 +19,13 @@ export function PatientDetails() {
           <Schedule />
         </Stack>
 
-        <Stack flex={1}>
+        <Stack spacing={'1.5rem'} flex={1}>
           <MedicalInformation />
-          <Flex>
-            <Text>Last updated:</Text>
-            <Text>23 November, 2023</Text>
+          <Flex gap={'.5rem'}>
+            <Text color={'#9F9F9F'} fontSize={'.75rem'}>
+              Last updated:
+            </Text>
+            <Text fontSize={'.75rem'}>23 November, 2023</Text>
           </Flex>
           <MedicalConditions />
           <MedicalHistory />
