@@ -1,0 +1,48 @@
+export const medicalHistory = [
+  {
+    firstName: 'Isaac',
+    lastName: 'Stewart',
+    id: '#002032',
+    conditionName: 'Hypertension',
+    relationship: 'Mother',
+  },
+  {
+    firstName: 'Aria',
+    lastName: 'Sanchez',
+    id: '#002033',
+    status: 'completed',
+    conditionName: 'Asthma',
+    relationship: 'Sister',
+  },
+  {
+    firstName: 'Logan',
+    lastName: 'Morris',
+    id: '#002034',
+    conditionName: 'Stroke',
+    relationship: 'Father',
+  },
+  {
+    firstName: 'Luna',
+    lastName: 'Morales',
+    id: '#002035',
+    status: 'pending',
+    conditionName: 'Asthma',
+    relationship: 'Brother',
+  },
+  {
+    firstName: 'Oliver',
+    lastName: 'Rodriguez',
+    id: '#002036',
+    status: 'completed',
+    conditionName: 'Asthma',
+    relationship: 'Uncle',
+  },
+  {
+    firstName: 'Avery',
+    lastName: 'Gonzalez',
+    id: '#002037',
+    status: 'cancelled',
+    conditionName: 'Asthma',
+    relationship: 'Cousin',
+  },
+];

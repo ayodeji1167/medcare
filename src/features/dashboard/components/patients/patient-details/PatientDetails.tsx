@@ -9,7 +9,7 @@ import NextAppointment from './NextAppointment';
 export function PatientDetails() {
   return (
     <Box pt={'2.5rem'}>
-      <Text fontSize={'1.5rem'} fontWeight={600}>
+      <Text mb={'1rem'} fontSize={'1.5rem'} fontWeight={600}>
         Patients
       </Text>
       <Flex gap={'1.5rem'}>

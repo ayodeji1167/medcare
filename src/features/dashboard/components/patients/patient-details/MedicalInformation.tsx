@@ -37,6 +37,7 @@ export default function MedicalInformation() {
         py={'1rem'}
         px={'1.5rem'}
         alignItems={'center'}
+        h={'5.6rem'}
       >
         <Box flex={1}>
           <Item name="Body temperature" value="36.5" unit="c" icon={TempIcon} />

@@ -16,11 +16,12 @@ export default function MedicalConditions() {
         boxShadow="0px 4px 50px 0px #E9F1FEB2"
         bg={'white'}
         rounded={'.5rem'}
+        pt={'1.9rem'}
       >
-        <Text mb={'.5rem'} fontSize={'.75rem'} fontWeight={500}>
+        <Text mb={'.8rem'} fontSize={'.75rem'} fontWeight={500}>
           Current Medical Conditions
         </Text>
-        <Stack spacing={'.5rem'} py={'.5rem'}>
+        <Stack spacing={'.8rem'} py={'.8rem'}>
           <Text fontSize={'.75rem'}>Hypertension</Text>
           <Text color={'#9F9F9F'} fontSize={'.75rem'}>
             Diagnosed: March 2018
@@ -45,9 +46,10 @@ export default function MedicalConditions() {
         boxShadow="0px 4px 50px 0px #E9F1FEB2"
         bg={'white'}
         rounded={'.5rem'}
+        pt={'1.9rem'}
       >
         <Flex
-          mb={'.5rem'}
+          mb={'.8rem'}
           alignItems={'center'}
           justifyContent={'space-between'}
         >
@@ -67,7 +69,7 @@ export default function MedicalConditions() {
             View all
           </Center>
         </Flex>
-        <Stack spacing={'.5rem'} py={'.5rem'}>
+        <Stack spacing={'.8rem'} py={'.8rem'}>
           <Text fontSize={'.75rem'}>Metformin</Text>
           <Text color={'#9F9F9F'} fontSize={'.75rem'}>
             Dosage: 500 mg{' '}
@@ -85,9 +87,10 @@ export default function MedicalConditions() {
         boxShadow="0px 4px 50px 0px #E9F1FEB2"
         bg={'white'}
         rounded={'.5rem'}
+        pt={'1.9rem'}
       >
         <Flex
-          mb={'.5rem'}
+          mb={'.8rem'}
           alignItems={'center'}
           justifyContent={'space-between'}
         >
@@ -107,7 +110,7 @@ export default function MedicalConditions() {
             View all
           </Center>
         </Flex>
-        <Stack spacing={'.5rem'} py={'.5rem'}>
+        <Stack spacing={'.8rem'} py={'.8rem'}>
           <Text fontSize={'.75rem'}>Penicillin</Text>
 
           <Text color={'#9F9F9F'} fontSize={'.75rem'}>
@@ -123,9 +126,10 @@ export default function MedicalConditions() {
         boxShadow="0px 4px 50px 0px #E9F1FEB2"
         bg={'white'}
         rounded={'.5rem'}
+        pt={'1.9rem'}
       >
         <Flex
-          mb={'.5rem'}
+          mb={'.8rem'}
           alignItems={'center'}
           justifyContent={'space-between'}
         >
@@ -145,7 +149,7 @@ export default function MedicalConditions() {
             View all
           </Center>
         </Flex>
-        <Stack spacing={'.5rem'} py={'.5rem'}>
+        <Stack spacing={'.8rem'} py={'.8rem'}>
           <Text fontSize={'.75rem'}>Recent Test Results</Text>
           <Text color={'#9F9F9F'} fontSize={'.75rem'}>
             Date: May 2024
