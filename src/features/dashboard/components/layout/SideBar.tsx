@@ -6,7 +6,6 @@ import { ReactComponent as PatientsIcon } from '@/assets/icons/sidebar/patients.
 import { ReactComponent as MessagesIcon } from '@/assets/icons/sidebar/messages.svg';
 import { ReactComponent as AppointmentsIcon } from '@/assets/icons/sidebar/appointments.svg';
 import { ReactComponent as AnalyticsIcon } from '@/assets/icons/sidebar/analytics.svg';
-import { ReactComponent as AdminIcon } from '@/assets/icons/sidebar/admin.svg';
 
 function NavItem({ name, slug, icon, path }) {
   const { pathname } = useLocation();
@@ -66,12 +65,6 @@ export default function SideBar() {
           slug={'analytics'}
           path={'/analytics'}
           icon={AnalyticsIcon}
-        />
-        <NavItem
-          name={'Admin management'}
-          slug={'admin'}
-          path={'/admin'}
-          icon={AdminIcon}
         />
       </Stack>
     </Box>
