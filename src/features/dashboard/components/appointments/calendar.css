@@ -1,0 +1,33 @@
+ 
+.fc-scrollgrid-sync-inner{
+    padding-left: 0;
+    width: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: .4rem;
+ } 
+
+ .fc-theme-standard td, .fc-theme-standard th{
+   border-width: 1px, 1px, 1px, 1px;
+
+    border-style: solid;
+    
+    border-color: #E9F1FE;
+     
+ }
+
+ .fc .fc-timegrid-slot {
+    height: 40px; /* Set height of each time slot */
+  }
+  
+ 
+
+ 
+ 
+.fc .fc-timegrid-slot-label {
+  font-size: 12px;      /* Change font size */
+  color: #2F2F2F; 
+  text-transform: uppercase; 
+  padding-right: .3rem;     /* Change text color */
+ }
+ 
