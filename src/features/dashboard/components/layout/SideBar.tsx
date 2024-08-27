@@ -1,11 +1,9 @@
 import { Box, Flex, Icon, Stack, Text } from '@chakra-ui/react';
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ReactComponent as DashboardIcon } from '@/assets/icons/sidebar/dashboard.svg';
 import { ReactComponent as PatientsIcon } from '@/assets/icons/sidebar/patients.svg';
 import { ReactComponent as MessagesIcon } from '@/assets/icons/sidebar/messages.svg';
 import { ReactComponent as AppointmentsIcon } from '@/assets/icons/sidebar/appointments.svg';
-import { ReactComponent as AnalyticsIcon } from '@/assets/icons/sidebar/analytics.svg';
 
 function NavItem({ name, slug, icon, path }) {
   const { pathname } = useLocation();
@@ -59,12 +57,6 @@ export default function SideBar() {
           slug={'appointments'}
           path={'/appointments'}
           icon={AppointmentsIcon}
-        />
-        <NavItem
-          name={'Analytics'}
-          slug={'analytics'}
-          path={'/analytics'}
-          icon={AnalyticsIcon}
         />
       </Stack>
     </Box>
